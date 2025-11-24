@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mikael Tesafye Bekele - Full Stack Web Developer & General Manager at Makalla Technology Solutions PLC. Portfolio showcasing projects, skills, and experience.">
+  <meta name="keywords" content="Mikael Tesafye Bekele, developer, portfolio, javascript, full stack, web developer, Ethiopia, Arba Minch, Makalla Technology">
+  <meta name="author" content="Mikael Tesafye Bekele">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mikael Tesafye Bekele - Full Stack Web Developer Portfolio">
+  <meta property="og:description" content="Full Stack Web Developer & General Manager at Makalla Technology Solutions PLC. Based in Arba Minch, Ethiopia.">
+  <meta property="og:image" content="/images/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Modern JavaScript Developer Portfolio">
+  <meta property="twitter:description" content="Full Stack JavaScript Developer - Projects, Skills, and Experience">
+  
+  <title>Mikael Tesafye Bekele - Full Stack Web Developer Portfolio</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container" role="navigation" aria-label="Main navigation">
+      <div class="nav__brand">
+        <a href="#home" class="nav__logo" aria-label="Home">Portfolio</a>
+      </div>
+      <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" id="nav-toggle">
+        <span class="nav__toggle-icon"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item">
+          <a href="#home" class="nav__link active" data-section="home">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link" data-section="about">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills" class="nav__link" data-section="skills">Skills</a>
+        </li>
+        <li class="nav__item">
+          <a href="#projects" class="nav__link" data-section="projects">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="#certificates" class="nav__link" data-section="certificates">Certificates</a>
+        </li>
+        <li class="nav__item">
+          <a href="#experience" class="nav__link" data-section="experience">Experience</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link" data-section="contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+      <!-- Animated Code Background -->
+      <div class="hero__code-bg">
+        <div class="code-line" style="--delay: 0s">const developer = {</div>
+        <div class="code-line" style="--delay: 0.5s">  name: '<span class="code-string" id="code-name">Mikael</span>',</div>
+        <div class="code-line" style="--delay: 1s">  role: '<span class="code-string">Full Stack Developer</span>',</div>
+        <div class="code-line" style="--delay: 1.5s">  skills: ['Laravel', 'React', 'PHP', 'JavaScript'],</div>
+        <div class="code-line" style="--delay: 2s">  location: 'Arba Minch, Ethiopia'</div>
+        <div class="code-line" style="--delay: 2.5s">};</div>
+      </div>
+      
+      <!-- Floating Tech Icons -->
+      <div class="hero__tech-icons">
+        <span class="tech-icon" style="--i: 0">⚡</span>
+        <span class="tech-icon" style="--i: 1">{ }</span>
+        <span class="tech-icon" style="--i: 2">&lt;/&gt;</span>
+        <span class="tech-icon" style="--i: 3">#</span>
+        <span class="tech-icon" style="--i: 4">$</span>
+        <span class="tech-icon" style="--i: 5">%</span>
+      </div>
+
+      <div class="hero__container container">
+        <div class="hero__content">
+          <div class="hero__terminal">
+            <div class="terminal__header">
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__title">developer@portfolio:~$</span>
+            </div>
+            <div class="terminal__body">
+              <div class="terminal__line">
+                <span class="terminal__prompt">$</span>
+                <span class="terminal__command typing" id="typing-text"></span>
+                <span class="terminal__cursor">|</span>
+              </div>
+            </div>
+          </div>
+          
+          <h1 class="hero__title">
+            <span class="hero__bracket">{</span>
+            <span class="hero__name" id="hero-name">Mikael Tesafye Bekele</span>
+            <span class="hero__bracket">}</span>
+          </h1>
+          
+          <div class="hero__role">
+            <span class="role-tag">&lt;Full Stack Developer /&gt;</span>
+          </div>
+          
+          <p class="hero__description" id="hero-description">
+            Building modern, scalable web applications with passion and precision.
+          </p>
+          
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary" aria-label="Get in touch">
+              <span>contactMe()</span>
+            </a>
+            <a href="#" class="btn btn--secondary" id="resume-download" aria-label="Download resume">
+              <span>downloadResume()</span>
+            </a>
+          </div>
+          
+          <div class="hero__social" id="hero-social" aria-label="Social links">
+            <!-- Social links will be injected here -->
+          </div>
+        </div>
+        
+        <div class="hero__image">
+          <div class="hero__avatar-wrapper">
+            <div class="hero__avatar" id="hero-avatar">
+              <!-- Profile image will be injected here -->
+            </div>
+            <div class="avatar__glow"></div>
+            <div class="code-brackets">
+              <span class="bracket bracket--left">&lt;</span>
+              <span class="bracket bracket--right">/&gt;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title">
+          <span class="title-bracket">//</span>
+          <span>About Me</span>
+          <span class="title-bracket">//</span>
+        </h2>
+        <div class="about__content">
+          <div class="about__code-panel">
+            <div class="code-panel__header">
+              <span class="code-panel__dot"></span>
+              <span class="code-panel__dot"></span>
+              <span class="code-panel__dot"></span>
+              <span class="code-panel__title">about.js</span>
+            </div>
+            <div class="code-panel__body">
+              <div class="code-line-number">1</div>
+              <div class="code-content">
+                <span class="code-keyword">const</span> <span class="code-variable">about</span> = <span class="code-brace">{</span>
+              </div>
+            </div>
+            <div class="code-panel__body">
+              <div class="code-line-number">2</div>
+              <div class="code-content">
+                &nbsp;&nbsp;<span class="code-property">name</span>: <span class="code-string" id="code-about-name">'Mikael'</span>,
+              </div>
+            </div>
+            <div class="code-panel__body">
+              <div class="code-line-number">3</div>
+              <div class="code-content">
+                &nbsp;&nbsp;<span class="code-property">role</span>: <span class="code-string">'Full Stack Developer'</span>,
+              </div>
+            </div>
+            <div class="code-panel__body">
+              <div class="code-line-number">4</div>
+              <div class="code-content">
+                &nbsp;&nbsp;<span class="code-property">location</span>: <span class="code-string">'Arba Minch, Ethiopia'</span>,
+              </div>
+            </div>
+            <div class="code-panel__body">
+              <div class="code-line-number">5</div>
+              <div class="code-content">
+                &nbsp;&nbsp;<span class="code-property">bio</span>: <span class="code-string" id="code-bio">''</span>
+              </div>
+            </div>
+            <div class="code-panel__body">
+              <div class="code-line-number">6</div>
+              <div class="code-content">
+                <span class="code-brace">}</span>;
+              </div>
+            </div>
+          </div>
+          <div class="about__text">
+            <div class="about__image">
+              <img src="" alt="Profile photo" id="about-photo" class="about__photo" loading="lazy">
+              <div class="about__image-border"></div>
+            </div>
+            <p class="about__bio" id="about-bio"></p>
+            <div class="about__info" id="about-info">
+              <!-- Personal info will be injected here -->
+            </div>
+            <a href="#" class="btn btn--primary" id="about-resume-download">
+              <span>downloadCV()</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title">
+          <span class="title-bracket">[</span>
+          <span>Skills</span>
+          <span class="title-bracket">]</span>
+        </h2>
+        <div class="skills__terminal">
+          <div class="terminal__header">
+            <span class="terminal__dot"></span>
+            <span class="terminal__dot"></span>
+            <span class="terminal__dot"></span>
+            <span class="terminal__title">skills@portfolio:~$</span>
+          </div>
+          <div class="skills__filters" id="skills-filters" role="tablist">
+            <!-- Filter buttons will be injected here -->
+          </div>
+        </div>
+        <div class="skills__container" id="skills-container">
+          <!-- Skills will be injected here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">
+          <span class="title-bracket">&lt;</span>
+          <span>Projects</span>
+          <span class="title-bracket">/&gt;</span>
+        </h2>
+        <div class="projects__terminal">
+          <div class="terminal__header">
+            <span class="terminal__dot"></span>
+            <span class="terminal__dot"></span>
+            <span class="terminal__dot"></span>
+            <span class="terminal__title">projects@portfolio:~$ ls -la</span>
+          </div>
+          <div class="projects__filters" id="projects-filters" role="tablist">
+            <!-- Filter buttons will be injected here -->
+          </div>
+        </div>
+        <div class="projects__grid" id="projects-grid">
+          <!-- Project cards will be injected here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal__overlay" id="modal-overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" id="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal__body" id="modal-body">
+          <!-- Project details will be injected here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificates Section -->
+    <section class="certificates section" id="certificates">
+      <div class="container">
+        <h2 class="section__title">
+          <span class="title-bracket">{</span>
+          <span>Certificates</span>
+          <span class="title-bracket">}</span>
+        </h2>
+        <div class="certificates__terminal">
+          <div class="terminal__header">
+            <span class="terminal__dot"></span>
+            <span class="terminal__dot"></span>
+            <span class="terminal__dot"></span>
+            <span class="terminal__title">certificates@portfolio:~$ cat achievements.txt</span>
+          </div>
+        </div>
+        <div class="certificates__grid" id="certificates-grid">
+          <!-- Certificate cards will be injected here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate Lightbox -->
+    <div class="lightbox" id="certificate-lightbox" role="dialog" aria-labelledby="lightbox-title" aria-hidden="true">
+      <div class="lightbox__overlay" id="lightbox-overlay"></div>
+      <div class="lightbox__content">
+        <button class="lightbox__close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <img src="" alt="Certificate" id="lightbox-image" class="lightbox__image">
+        <div class="lightbox__info" id="lightbox-info">
+          <!-- Certificate info will be injected here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <h2 class="section__title">
+          <span class="title-bracket">git</span>
+          <span>Experience</span>
+          <span class="title-bracket">log</span>
+        </h2>
+        <div class="experience__terminal">
+          <div class="terminal__header">
+            <span class="terminal__dot"></span>
+            <span class="terminal__dot"></span>
+            <span class="terminal__dot"></span>
+            <span class="terminal__title">experience@portfolio:~$ git log --oneline</span>
+          </div>
+        </div>
+        <div class="experience__timeline" id="experience-timeline">
+          <!-- Experience items will be injected here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title">
+          <span class="title-bracket">send</span>
+          <span>Message</span>
+          <span class="title-bracket">()</span>
+        </h2>
+        <div class="contact__content">
+          <div class="contact__info">
+            <div class="contact__terminal">
+              <div class="terminal__header">
+                <span class="terminal__dot"></span>
+                <span class="terminal__dot"></span>
+                <span class="terminal__dot"></span>
+                <span class="terminal__title">contact@portfolio:~$</span>
+              </div>
+              <div class="terminal__body">
+                <div class="terminal__line">
+                  <span class="terminal__prompt">$</span>
+                  <span class="terminal__command">echo "Let's connect!"</span>
+                </div>
+                <div class="terminal__output">Let's connect!</div>
+              </div>
+            </div>
+            <p class="contact__description">
+              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            </p>
+            <div class="contact__details" id="contact-details">
+              <!-- Contact details will be injected here -->
+            </div>
+            <div class="contact__social" id="contact-social">
+              <!-- Social links will be injected here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        &copy; <span id="current-year"></span> Mikael Tesafye Bekele. All rights reserved.
+      </p>
+      <p class="footer__text footer__text--small">
+        Built with modern JavaScript, HTML5, and CSS3
+      </p>
+    </div>
+  </footer>
+
+  <!-- SVG Icons (Hidden) -->
+  <svg style="display: none;">
+    <symbol id="icon-github" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+    </symbol>
+    <symbol id="icon-twitter" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+    </symbol>
+  </svg>
+
+  <!-- Scripts -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
+

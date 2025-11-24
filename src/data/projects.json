@@ -1,0 +1,42 @@
+[
+  {
+    "id": "project-001",
+    "title": "Makalla Technology Solutions",
+    "slug": "makalla-org",
+    "shortDescription": "Official company website for Makalla Technology Solutions PLC built with HTML, CSS, JavaScript and PHP backend.",
+    "longDescription": "Professional company website built to showcase Makalla Technology Solutions' services, portfolio, and company information. Built with modern frontend technologies (HTML, CSS, JavaScript) and PHP backend. Features modern design, responsive layout, and seamless user experience.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "PHP"],
+    "image": "/images/projects/makalla.org.jpg",
+    "demoUrl": "https://makalla.org",
+    "repoUrl": "",
+    "date": "2024-01-15",
+    "featured": true
+  },
+  {
+    "id": "project-002",
+    "title": "Maqansa",
+    "slug": "maqansa",
+    "shortDescription": "Ethiopian movie streaming platform built with Laravel technology stack.",
+    "longDescription": "A comprehensive movie streaming platform designed specifically for the Ethiopian market. Built with Laravel framework, featuring video streaming capabilities, user authentication, subscription management, and a modern responsive interface for seamless movie watching experience.",
+    "technologies": ["Laravel", "JavaScript", "MySQL", "CSS3", "PHP"],
+    "image": "/images/projects/maqansa.com.jpg",
+    "demoUrl": "https://maqansa.com",
+    "repoUrl": "",
+    "date": "2024-03-20",
+    "featured": true
+  },
+  {
+    "id": "project-004",
+    "title": "Yene Chat",
+    "slug": "yene-chat",
+    "shortDescription": "AI service providing web platform built with Laravel.",
+    "longDescription": "A comprehensive AI service providing web platform built with Laravel technology stack. Features AI-powered services, user management, service subscriptions, and an intuitive interface for accessing various AI tools and services.",
+    "technologies": ["Laravel", "JavaScript", "MySQL", "PHP", "AI Integration"],
+    "image": "/images/projects/yenechat.com.jpg",
+    "demoUrl": "https://yenechat.com",
+    "repoUrl": "",
+    "date": "2024-08-25",
+    "featured": true
+  }
+]
+

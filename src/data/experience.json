@@ -1,0 +1,21 @@
+[
+  {
+    "id": "exp-001",
+    "title": "General Manager & Full Stack Web Developer",
+    "company": "Makalla Technology Solutions PLC",
+    "location": "Arba Minch, Ethiopia",
+    "startDate": "2023-01-01",
+    "endDate": null,
+    "current": true,
+    "description": "Leading technology solutions company as General Manager while actively developing full-stack web applications. Managing company operations, client relationships, and technical development projects.",
+    "responsibilities": [
+      "Overseeing company operations and strategic planning",
+      "Developing and maintaining multiple web applications including makalla.org, maqansa.com, makallacommunity.makalla.org, and yenechat.com",
+      "Leading development teams and managing project timelines",
+      "Building scalable web solutions for clients",
+      "Managing client relationships and business development"
+    ],
+    "technologies": ["JavaScript", "PHP", "Laravel", "React", "MySQL", "HTML5", "CSS3"]
+  }
+]
+

@@ -1,0 +1,27 @@
+{
+  "name": "modern-developer-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive developer portfolio built with vanilla JavaScript",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,html",
+    "deploy:vercel": "npm run build && vercel --prod",
+    "deploy:netlify": "npm run build && netlify deploy --prod --dir=dist",
+    "deploy:github": "npm run build && gh-pages -d dist"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "javascript",
+    "vanilla-js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
+

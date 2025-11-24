@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikael Tesafye Bekele - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+      padding: 0;
+      margin: 0;
+    }
+
+    .resume-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px;
+      background: #fff;
+    }
+
+    .header {
+      text-align: center;
+      border-bottom: 3px solid #6366f1;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      color: #1f2937;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .header .title {
+      font-size: 18px;
+      color: #6366f1;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      color: #6366f1;
+      font-weight: 700;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .profile-summary {
+      font-size: 15px;
+      color: #4b5563;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .experience-item,
+    .project-item {
+      margin-bottom: 25px;
+      padding-left: 20px;
+      border-left: 3px solid #e5e7eb;
+      padding-bottom: 20px;
+    }
+
+    .experience-item:last-child,
+    .project-item:last-child {
+      border-left: none;
+      padding-left: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .item-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 5px;
+    }
+
+    .item-company {
+      font-size: 16px;
+      color: #6366f1;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .item-date {
+      font-size: 14px;
+      color: #6b7280;
+      font-style: italic;
+    }
+
+    .item-location {
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .item-description {
+      font-size: 14px;
+      color: #4b5563;
+      margin: 10px 0;
+      line-height: 1.7;
+    }
+
+    .responsibilities {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    .responsibilities li {
+      font-size: 14px;
+      color: #4b5563;
+      margin-bottom: 6px;
+      line-height: 1.6;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .tech-tag {
+      background: #f3f4f6;
+      color: #6366f1;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      border: 1px solid #e5e7eb;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-category {
+      margin-bottom: 15px;
+    }
+
+    .skill-category h4 {
+      font-size: 16px;
+      color: #1f2937;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-item {
+      background: #f9fafb;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #4b5563;
+      border: 1px solid #e5e7eb;
+    }
+
+    .project-link {
+      color: #6366f1;
+      text-decoration: none;
+      font-size: 13px;
+      margin-left: 10px;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    .certificate-item {
+      margin-bottom: 15px;
+      padding: 12px;
+      background: #f9fafb;
+      border-radius: 6px;
+      border-left: 4px solid #6366f1;
+    }
+
+    .certificate-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 5px;
+    }
+
+    .certificate-issuer {
+      font-size: 14px;
+      color: #6366f1;
+      margin-bottom: 3px;
+    }
+
+    .certificate-date {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .education {
+      margin-bottom: 15px;
+    }
+
+    .education-item {
+      margin-bottom: 15px;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+      .resume-container {
+        padding: 20px;
+      }
+      .section {
+        page-break-inside: avoid;
+      }
+      button {
+        display: none;
+      }
+      div[style*="text-align: center"] {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .resume-container {
+        padding: 20px;
+      }
+      .item-header {
+        flex-direction: column;
+      }
+      .contact-info {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center; padding: 20px; background: #f3f4f6; border-bottom: 2px solid #e5e7eb;">
+    <button onclick="window.print()" style="background: #6366f1; color: white; border: none; padding: 12px 24px; font-size: 16px; border-radius: 6px; cursor: pointer; font-weight: 600; box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);">
+      📄 Print / Save as PDF
+    </button>
+    <p style="margin-top: 10px; color: #6b7280; font-size: 14px;">Click the button above to print or save as PDF</p>
+  </div>
+
+  <div class="resume-container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Mikael Tesafye Bekele</h1>
+      <div class="title">Full Stack Web Developer & General Manager</div>
+      <div class="contact-info">
+        <span>📍 Arba Minch, Ethiopia</span>
+        <span>✉️ mikitesfaye09025@gmail.com</span>
+        <span>📞 +251 961 413 302</span>
+        <span>🔗 <a href="https://github.com/Mikael-cod" style="color: #6366f1; text-decoration: none;">GitHub</a></span>
+        <span>🔗 <a href="https://www.linkedin.com/in/mikael-tesfaye-2780912b7/" style="color: #6366f1; text-decoration: none;">LinkedIn</a></span>
+      </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section">
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="profile-summary">
+        Full Stack Web Developer and General Manager at Makalla Technology Solutions PLC with 2+ years of experience. 
+        Born and raised in Arba Minch, Ethiopia. Passionate about building scalable web applications and leading technology 
+        solutions. I specialize in creating modern, user-friendly digital experiences that solve real-world problems. 
+        Proven track record in managing company operations, leading development teams, and delivering high-quality web 
+        applications using modern technologies.
+      </p>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="section">
+      <h2 class="section-title">Work Experience</h2>
+      
+      <div class="experience-item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">General Manager & Full Stack Web Developer</div>
+            <div class="item-company">Makalla Technology Solutions PLC</div>
+            <div class="item-location">Arba Minch, Ethiopia</div>
+          </div>
+          <div class="item-date">January 2023 - Present</div>
+        </div>
+        <p class="item-description">
+          Leading technology solutions company as General Manager while actively developing full-stack web applications. 
+          Managing company operations, client relationships, and technical development projects.
+        </p>
+        <ul class="responsibilities">
+          <li>Overseeing company operations and strategic planning</li>
+          <li>Developing and maintaining multiple web applications including makalla.org, maqansa.com, makallacommunity.makalla.org, and yenechat.com</li>
+          <li>Leading development teams and managing project timelines</li>
+          <li>Building scalable web solutions for clients</li>
+          <li>Managing client relationships and business development</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">PHP</span>
+          <span class="tech-tag">Laravel</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+      <h2 class="section-title">Key Projects</h2>
+      
+      <div class="project-item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">Makalla Technology Solutions</div>
+            <div class="item-company">Company Website</div>
+          </div>
+          <div class="item-date">January 2024</div>
+        </div>
+        <p class="item-description">
+          Official company website for Makalla Technology Solutions PLC built with HTML, CSS, JavaScript and PHP backend. 
+          Features modern design, responsive layout, and seamless user experience.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">PHP</span>
+        </div>
+        <a href="https://makalla.org" target="_blank" class="project-link">View Live →</a>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">Maqansa</div>
+            <div class="item-company">Movie Streaming Platform</div>
+          </div>
+          <div class="item-date">March 2024</div>
+        </div>
+        <p class="item-description">
+          Ethiopian movie streaming platform built with Laravel technology stack. Features video streaming capabilities, 
+          user authentication, subscription management, and a modern responsive interface.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">Laravel</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">PHP</span>
+        </div>
+        <a href="https://maqansa.com" target="_blank" class="project-link">View Live →</a>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">Yene Chat</div>
+            <div class="item-company">AI Service Platform</div>
+          </div>
+          <div class="item-date">August 2024</div>
+        </div>
+        <p class="item-description">
+          Comprehensive AI service providing web platform built with Laravel technology stack. Features AI-powered services, 
+          user management, service subscriptions, and an intuitive interface for accessing various AI tools and services.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">Laravel</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">PHP</span>
+          <span class="tech-tag">AI Integration</span>
+        </div>
+        <a href="https://yenechat.com" target="_blank" class="project-link">View Live →</a>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Frontend</h4>
+          <div class="skill-list">
+            <span class="skill-item">JavaScript (90%)</span>
+            <span class="skill-item">HTML5 & CSS3 (95%)</span>
+            <span class="skill-item">React (85%)</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Backend</h4>
+          <div class="skill-list">
+            <span class="skill-item">PHP (85%)</span>
+            <span class="skill-item">Laravel (80%)</span>
+            <span class="skill-item">Node.js (75%)</span>
+            <span class="skill-item">MySQL (85%)</span>
+            <span class="skill-item">MongoDB (70%)</span>
+            <span class="skill-item">WebSocket (75%)</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Tools & Technologies</h4>
+          <div class="skill-list">
+            <span class="skill-item">Git & GitHub (90%)</span>
+            <span class="skill-item">RESTful APIs (85%)</span>
+            <span class="skill-item">Responsive Design (95%)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section">
+      <h2 class="section-title">Certifications</h2>
+      
+      <div class="certificate-item">
+        <div class="certificate-title">Full Stack Web Development</div>
+        <div class="certificate-issuer">Udemy</div>
+        <div class="certificate-date">May 2024 | <a href="https://ude.my/UC-c32debdb-6d6f-4fb6-946a-80f474a4b948" target="_blank" style="color: #6366f1; text-decoration: none;">Verify Certificate</a></div>
+      </div>
+
+      <div class="certificate-item">
+        <div class="certificate-title">JavaScript Algorithms and Data Structures</div>
+        <div class="certificate-issuer">freeCodeCamp</div>
+        <div class="certificate-date">March 2024</div>
+      </div>
+
+      <div class="certificate-item">
+        <div class="certificate-title">React - The Complete Guide</div>
+        <div class="certificate-issuer">Udemy</div>
+        <div class="certificate-date">January 2024</div>
+      </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="section">
+      <h2 class="section-title">Additional Information</h2>
+      <div style="font-size: 14px; color: #4b5563; line-height: 1.8;">
+        <p><strong>Languages:</strong> English, Amharic</p>
+        <p><strong>Date of Birth:</strong> 1995</p>
+        <p><strong>Location:</strong> Arba Minch, Ethiopia</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Auto-download as PDF when page loads (optional)
+    // Uncomment the following if you want automatic PDF download
+    /*
+    window.onload = function() {
+      window.print();
+    };
+    */
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "cert-001",
+    "title": "Full Stack Web Development",
+    "issuer": "Udemy",
+    "issueDate": "2024-05-15",
+    "image": "/images/certs/udemy-fullstack.jpg",
+    "verifyUrl": "https://ude.my/UC-c32debdb-6d6f-4fb6-946a-80f474a4b948"
+  },
+  {
+    "id": "cert-002",
+    "title": "JavaScript Algorithms and Data Structures",
+    "issuer": "freeCodeCamp",
+    "issueDate": "2024-03-20",
+    "image": "/images/certs/fcc-js-algorithms.png",
+    "verifyUrl": "https://freecodecamp.org/certification/username/javascript-algorithms-and-data-structures"
+  },
+  {
+    "id": "cert-003",
+    "title": "React - The Complete Guide",
+    "issuer": "Udemy",
+    "issueDate": "2024-01-10",
+    "image": "/images/certs/udemy-react.png",
+    "verifyUrl": "https://udemy-certificate-url"
+  }
+]
+

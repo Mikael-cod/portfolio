@@ -1,0 +1,19 @@
+{
+  "name": "Mikael Tesafye Bekele",
+  "title": "Full Stack Web Developer & General Manager",
+  "location": "Arba Minch, Ethiopia",
+  "email": "mikitesfaye09025@gmail.com",
+  "phone": "+251 961 413 302",
+  "languages": ["English", "Amharic"],
+  "bio": "Full Stack Web Developer and General Manager at Makalla Technology Solutions PLC with 2+ years of experience. Born and raised in Arba Minch, Ethiopia. Passionate about building scalable web applications and leading technology solutions. I specialize in creating modern, user-friendly digital experiences that solve real-world problems.",
+  "photo": "/images/miki.jpg",
+  "resumeUrl": "/resume.html",
+  "social": {
+    "github": "https://github.com/Mikael-cod",
+    "linkedin": "https://www.linkedin.com/in/mikael-tesfaye-2780912b7/",
+    "facebook": "https://web.facebook.com/mikael.tesfaye.bekele",
+    "twitter": "",
+    "email": "mailto:mikitesfaye09025@gmail.com"
+  }
+}
+
